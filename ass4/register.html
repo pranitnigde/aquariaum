@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<script type="text/javascript">
+		function validate(){
+			console.log("validating...");
+			var x = document.forms["myForm"]["fname"].value;
+			if (x == "") {
+				alert("Name must be filled out");
+				return false;
+			}
+			if(document.forms["myForm"]["email_id"].value == ""){
+				alert("Email must be filled out");
+				return false;
+			}
+			else if(document.forms["myForm"]["email_id"].value != ""){
+				mail = document.forms["myForm"]["email_id"].value;
+				ValidateEmail(mail);
+			}
+			if(document.forms["myForm"]["contact"].value == ""){
+				alert("Mobile must be filled out");
+				return false;
+			}
+			else if(document.forms["myForm"]["contact"].value != ""){
+				var mobile = document.forms["myForm"]["contact"].value;
+				if (isNaN(mobile)){
+					alert("Mobile must be Number");
+					return false;
+				}
+				else if(mobile.length == 10){
+					alert("Number must be 10 digits");
+					return false;
+				}
+				
+			}
+			console.log("completed");
+			window.confirm("confirm! Do you want to submit");
+		}
+
+		function ValidateEmail(mail) 
+		{
+		 if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.forms["myForm"]["email_id"].value)))
+		  {
+		    alert("You have entered an invalid email address!")
+		    return (false)
+		  }
+		    
+		    // return (false)
+		}
+
+	</script>
+</head>
+<body>
+	<form method="" action="" name="myForm">
+<table align="center" width="400" style="padding: 2px;	" >
+<h2 align="center">Registration form</h2>
+<tr>
+<th>Enter your first name</th>
+<td><input type="text"  name="fname" maxlength="10" /></td>
+</tr><tr></tr>
+<tr>
+<th>Enter your last name</th>
+<td><input type="text"/></td>
+</tr><tr></tr>
+<tr>
+<th>Enter your email</th>
+<td><input type="text" name="email_id" /></td>
+</tr><tr></tr>
+<tr>
+<th>Enter your mobile</th>
+<td><input type="text" name="contact" /></td>
+</tr><tr></tr>
+<tr>
+<td colspan="2" align="center"><input type="button" value="Save My Data" onclick="validate()" />
+<input type="reset" value="Reset Data"/>
+</td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>

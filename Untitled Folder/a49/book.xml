@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bookstyle.xsl"?>
+<catlog>
+	<book>
+	   <Title>Junior Level Books Introduction to Computer</Title>
+	   <Author>Amit Garg</Author>
+	   <Price>10</Price>
+           <Publication>Reader Zone</Publication>
+	   <year>2011</year>
+	</book>
+	<book>
+	   <Title>Publish News Letter</Title>
+	   <Author>Amit Garg</Author>
+	   <Price>12</Price>
+           <Publication>MCA Department, MIET Meerut</Publication>
+	   <year>2011</year>
+	</book>
+	<book>
+	   <Title>Client Server Computing </Title>
+	   <Author>Lalit Kumar</Author>
+	   <Price>11</Price>
+           <Publication>Sun India Publications, New Delhi</Publication>
+	   <year>2012</year>
+	</book>
+	<book>
+	   <Title>Mobile Computing</Title>
+	   <Author>Vinay Kumar Singhal</Author>
+	   <Price>20</Price>
+           <Publication>K Nath AND Sons, Meerut</Publication>
+	   <year>2011</year>
+	</book>
+	<book>
+	   <Title>Data Structure Using C </Title>
+	   <Author>Sharad Kumar Verma </Author>
+	   <Price>23</Price>
+           <Publication>Thakur Publications Lucknow</Publication>
+	   <year>2015</year>
+	</book>
+	<book>
+	   <Title>CBOT</Title>
+	   <Author>Gunjan Verma</Author>
+	   <Price>30</Price>
+           <Publication>Thakur Publications </Publication>
+	   <year>2014</year>
+	</book>
+</catlog>
